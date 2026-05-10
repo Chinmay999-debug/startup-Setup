@@ -45,12 +45,14 @@ export function Navbar() {
     >
       <nav
         className={`flex w-full max-w-6xl items-center justify-between rounded-full border hairline px-3 py-2.5 transition-all duration-500 ${
-          scrolled || open ? "glass shadow-elevated" : "bg-background/40 backdrop-blur-sm"
+          scrolled || open
+          ? "bg-white/85 backdrop-blur-xl border border-black/5 shadow-xl"
+          : "bg-white/70 backdrop-blur-lg border border-black/5 shadow-lg"
         }`}
       >
         <Link to="/" className="group flex items-center gap-2 pl-2">
           <img
-            src="/ss-logo-black.png"
+            src={`${import.meta.env.BASE_URL}ss-black-logo.png`}
             alt=""
             className="h-6 w-6 shrink-0 object-contain transition-transform duration-300 group-hover:-translate-y-0.5"
             aria-hidden="true"
