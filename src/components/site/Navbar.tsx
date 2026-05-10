@@ -52,7 +52,7 @@ export function Navbar() {
       >
         <Link to="/" className="group flex items-center gap-2 pl-2">
           <img
-            src={`${import.meta.env.BASE_URL}ss-black-logo.png`}
+            src={`${import.meta.env.BASE_URL}ss-logo-black.png`}
             alt=""
             className="h-6 w-6 shrink-0 object-contain transition-transform duration-300 group-hover:-translate-y-0.5"
             aria-hidden="true"
